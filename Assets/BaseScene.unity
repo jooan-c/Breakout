@@ -392,7 +392,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 506386332}
-  - component: {fileID: 506386331}
+  - component: {fileID: 506386333}
   m_Layer: 0
   m_Name: BrickManagerPlayer1
   m_TagString: Untagged
@@ -400,22 +400,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &506386331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 506386330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10c17450d7e09654cb4f14e7ef4fb1cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rows: 5
-  cols: 5
-  spacing: 0.01
-  brickPrefab: {fileID: 4623678585415305499, guid: 27db35bc41ddcbb44848ad182d76f720, type: 3}
 --- !u!4 &506386332
 Transform:
   m_ObjectHideFlags: 0
@@ -431,6 +415,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &506386333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506386330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f0fd20f47d4e4d478ab4190e075febc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rows: 5
+  cols: 5
+  spacing: 0.01
+  brickPrefab: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -639,6 +639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28bd0ffa1e6a19444bbbcf195e2ffcd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPlayer1: 1
 --- !u!1 &748678666
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,6 +800,7 @@ GameObject:
   - component: {fileID: 819690902}
   - component: {fileID: 819690904}
   - component: {fileID: 819690903}
+  - component: {fileID: 819690905}
   m_Layer: 0
   m_Name: Player2Wall
   m_TagString: Untagged
@@ -899,6 +901,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &819690905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819690901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28bd0ffa1e6a19444bbbcf195e2ffcd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlayer1: 0
 --- !u!1 &870023728
 GameObject:
   m_ObjectHideFlags: 0
@@ -1019,7 +1034,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 974741030}
-  - component: {fileID: 974741029}
   m_Layer: 0
   m_Name: BrickManagerPlayer2
   m_TagString: Untagged
@@ -1027,22 +1041,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &974741029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 974741028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10c17450d7e09654cb4f14e7ef4fb1cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rows: 5
-  cols: 5
-  spacing: 0.01
-  brickPrefab: {fileID: 4623678585415305499, guid: 27db35bc41ddcbb44848ad182d76f720, type: 3}
 --- !u!4 &974741030
 Transform:
   m_ObjectHideFlags: 0

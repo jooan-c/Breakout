@@ -183,6 +183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   rb: {fileID: 101047643}
+  isPlayer1: 1
 --- !u!212 &101047641
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -525,6 +526,7 @@ GameObject:
   - component: {fileID: 596388924}
   - component: {fileID: 596388926}
   - component: {fileID: 596388925}
+  - component: {fileID: 596388927}
   m_Layer: 0
   m_Name: Player1Wall
   m_TagString: Untagged
@@ -625,6 +627,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &596388927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596388923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28bd0ffa1e6a19444bbbcf195e2ffcd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &748678666
 GameObject:
   m_ObjectHideFlags: 0
@@ -1533,6 +1547,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   rb: {fileID: 2030589211}
+  isPlayer1: 0
 --- !u!212 &2030589214
 SpriteRenderer:
   m_ObjectHideFlags: 0

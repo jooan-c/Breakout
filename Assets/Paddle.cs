@@ -36,7 +36,6 @@ public class Paddle : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
 
-        //citation: https://www.youtube.com/watch?v=RYG8UExRkhA
         Ball ball = collision.gameObject.GetComponent<Ball>();
        
         if (ball != null)
